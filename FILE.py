@@ -3,17 +3,17 @@ from PIL import Image as im
 # NumPy pour le traitement numérique
 import numpy as np
 # fichier à ouvrir
-file="image/lena.gif"
+filePath="image/lena.gif"
 try:
 
     # Ouvre le fichier image
-    photo=im.open(file)
+    photo=im.open(filePath)
     photo.show()
 
     print("Propriété Image initial: ")
 
     # Affiche nom avec l'extention, la taille 
-    print(file, photo.format , "%d*%d" %photo.size , photo.mode)
+    print(filePath, photo.format , "%d*%d" %photo.size , photo.mode)
 except IOError:
     print("Erreur lors de l'ouverture du fichier ")
 
