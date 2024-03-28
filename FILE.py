@@ -98,9 +98,7 @@ P = convertToZero(photo)
 # Afficher les pixels de l'image modifiée
 M = list(M.getdata())
 P = list(P.getdata())
-# print(M)
 print("-------------------------------------------------------------------------")
-# print(P)
 print("-------------------------------------------------------------------------")
 
 tableauPixels1 = np.array(photo)
@@ -115,8 +113,9 @@ phot.show()
 photoCat = "image/img.jpeg"
 try:
     photo2 = im.open(photoCat)
-    # photo2.show()
-
+    photo2.show()
+    
+    
     print("image initial :///////////////////")
 
     # print(photoCat,photo2.format ,"%d*%d" %photo2.size ,photo2.mode)
@@ -126,9 +125,7 @@ except:
 
 
 tableauPixels2 = np.array(photo2)
-print("22222222222222222222222222222222222222222222222222")
 print(tableauPixels2)
-print("22222222222222222222222222222222222222222222222222")
 
 def color(im):
     for i in range(2):
@@ -136,7 +133,5 @@ def color(im):
     exportImageCat(im)
 
 color(tableauPixels2)
-
-
 
 
