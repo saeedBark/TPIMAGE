@@ -127,11 +127,11 @@ except:
 tableauPixels2 = np.array(photo2)
 print(tableauPixels2)
 
-def color(im):
-    for i in range(2):
-        im[:,:,i] = 0
-    exportImageCat(im)
+#def color(im):
+  #  for i in range(2):
+      #  im[:,:,i] = 0
+   # exportImageCat(im)
 
-color(tableauPixels2)
+#color(tableauPixels2)
 
 
